@@ -18,13 +18,47 @@
                 <a class="atag" href="#">Services</a>
                 <a class="atag" href="#">Contact</a>
             </li>
-           
-        </ul>         
+
+        </ul>
         <button class="button">login</button>
     </div>
-    
-    
-    
+
+    <div class="loginWindow">
+        <div class="formTitle">
+            <h1>Login</h1>
+            <button type="button">X</button>
+        </div>
+
+        <div class="inputEmail">
+            <form id="emailForm">
+                <img class="emailImg" src="./email-107-32.png" alt="email-icon">
+                <input type="text" id="email" placeholder="name@example.com..."><br>
+            </form>
+            <p id="incorrectInput" class="incorrectInput">Invalid email address</p>
+        </div>
+        <div class="lineDiv"></div>
+
+        <div class="inputpassword">
+            <form id="passwordForm">
+                <img class="passwordImg" src="./password-icon.png" alt="password-icon">
+                <input type="password" id="password" placeholder="enter your password..."><br>
+            </form>
+        </div>
+        <div class="lineDiv"></div>
+
+        <div class="optionFiled">
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+        </div>
+
+
+        <button id="loginButton" type="submit">Login Now</button>
+        <p class="singUpLink">Not a memner? <a href="#">Singup Now</a></p>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

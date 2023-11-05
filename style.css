@@ -140,13 +140,16 @@ li {
     height: 2px;
 }
 
-.incorrectInput {
+.incorrectInput,
+.incorrectPassword {
+    margin-top: 5px;
     font-size: 8px;
     display: none;
     color: red;
 }
 
-.showIncorrectInput {
+.showIncorrectInput,
+.showIncorrectPassword {
     display: block;
 }
 

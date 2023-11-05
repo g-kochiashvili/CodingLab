@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 body {
-    background-image: url(./bg.jpg);
+    background-image: url(./img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -119,14 +119,22 @@ li {
 }
 
 .emailImg,
-.passwordImg {
+.passwordImg,
+#openEye {
     opacity: 0.5;
     display: flex;
     align-items: center;
     width: 20px;
     height: 20px;
 }
+#openEye:hover{
+    opacity:0.2;
+}
 
+#passwordForm button{
+    border: none;
+    background-color:rgba(255, 255, 255, 0);
+}
 #email,
 #password {
     border-style: none;

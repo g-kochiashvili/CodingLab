@@ -31,7 +31,7 @@
 
         <div class="inputEmail">
             <form id="emailForm">
-                <img class="emailImg" src="./email-107-32.png" alt="email-icon">
+                <img class="emailImg" src="./img/email-107-32.png" alt="email-icon">
                 <input type="text" id="email" placeholder="name@example.com..."><br>
             </form>
             <p id="incorrectInput" class="incorrectInput">Invalid email address</p>
@@ -40,8 +40,11 @@
 
         <div class="inputpassword">
             <form id="passwordForm">
-                <img class="passwordImg" src="./password-icon.png" alt="password-icon">
+                <img class="passwordImg" src="./img/password-icon.png" alt="password-icon">
                 <input type="password" id="password" placeholder="enter your password..."><br>
+                <button type="button" onclick="showPassword()">
+                    <img id="openEye" src="./img/openEye.svg" alt="eyeIcon">
+                </button>
             </form>
             <p id="incorrectPassword" class="incorrectPassword">Invalid password</p>
 

@@ -38,5 +38,13 @@ function showPassword() {
         passwordEl.type = "password";
         i = 0;
     }
-    // passwordEl.textContent="ggg";
+}
+
+function exitWindow(){
+    const windowDiv = document.querySelector(".loginWindow");
+    windowDiv.style.display="none";
+}
+function returnLoginWindow(){
+    const windowDiv = document.querySelector(".loginWindow");
+    windowDiv.style.display="block";
 }

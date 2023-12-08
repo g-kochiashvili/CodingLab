@@ -1,20 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 body {
+    /* position: relative; */
     background-image: url(./img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     justify-content: center;
-
-
+    align-items: center;
+}
+.opacityBackground{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .header {
+    align-self: flex-start;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -61,6 +69,8 @@ li {
 }
 
 .loginWindow {
+    position:absolute;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -75,21 +85,21 @@ li {
 }
 
 .formTitle {
-    /* ??? */
     display: flex;
     justify-content: flex-end;
     margin-bottom: 25px;
-
-    /* gap: 40px; */
-
+    position: relative;
+    width: 100%;
 }
 
 .formTitle button {
+    position: absolute;
     border-style: none;
     background: none;
     color: darkgray;
     font-size: 25px;
     margin-right: 0px;
+  
 }
 
 .formTitle button:hover {
@@ -103,6 +113,8 @@ li {
     width: 270px;
     font-size: 30px;
     font-weight: 600;
+    width: 100%;
+    
 }
 
 .inputEmail,
@@ -142,7 +154,7 @@ li {
 }
 
 .lineDiv {
-    margin: 10px;
+    margin-top: 10px;
     background-color: darkgray;
     width: 100%;
     height: 2px;
@@ -202,7 +214,7 @@ li {
     text-decoration: underline;
 }
 
-#loginButton {
+#loginButton, .createAccount, .alternativeSingUp {
     border: none;
     width: 100%;
     background-color: #7d2ae8;
@@ -212,7 +224,7 @@ li {
     font-weight: bolder;
 }
 
-#loginButton:hover {
+#loginButton:hover, .createAccount:hover, .alternativeSingUp:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: translateY(-0.10em);
     cursor: pointer;
@@ -223,11 +235,81 @@ li {
     margin-top: 15px;
 }
 
-.singUpLink a {
+.singUpLink button, #singUpButton {
+    background: none;
+    border: none;
     text-decoration: none;
     color: #7d2ae8
 }
 
-.singUpLink a:hover {
+.singUpLink button:hover {
+    cursor: pointer;
     text-decoration: underline;
+}
+.singUpWindow{
+    position: absolute;
+    background-color: #fff;
+    width: 500px;
+    height: 600px;
+    /* z-index: 1; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    height: fit-content;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+}
+.singUpWindow h1{
+    display: flex;
+    justify-content: center;
+    /* width: 270px; */
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    line-height: normal;
+}
+.describtion{
+    color: #8D8D8D;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+    margin-bottom: 68px;
+}
+
+input{
+    border: none;
+
+}
+.inputs{
+    display: grid;
+    gap:30px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #0b0217;
+}
+.createAccount{
+    margin: 40px 0px 20px;
+    height: 48px;
+}
+.alternativeSingUp{
+    text-decoration: none;
+    background-color: #fff;
+    color: black;
+    border-style:solid;
+    border-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alternativeSingUp img{
+    width: 25px;
+    margin-right: 10px;
+}
+.singUpQuestion{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }

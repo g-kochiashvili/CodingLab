@@ -39,12 +39,14 @@ function showPassword() {
         i = 0;
     }
 }
+const windowDiv = document.querySelector(".loginWindow");
+const opacityBackground = document.querySelector(".opacityBackground");
+function exitWindow() {
+    windowDiv.style.display = "none";
+    opacityBackground.style.display = "none";
+}
+function returnLoginWindow() {
+    windowDiv.style.display = "block";
+    opacityBackground.style.display = "block";
+}
 
-function exitWindow(){
-    const windowDiv = document.querySelector(".loginWindow");
-    windowDiv.style.display="none";
-}
-function returnLoginWindow(){
-    const windowDiv = document.querySelector(".loginWindow");
-    windowDiv.style.display="block";
-}
